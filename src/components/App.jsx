@@ -6,9 +6,8 @@ import { Filter } from './filter/Filter';
 export const App = () => {
   return (
     <>
-      <h2>Phonebook</h2>
       <FormContaks />
-      <h2>Contacts</h2>
+      <h2>Filter</h2>
       <Filter />
       <ContactList />
     </>
