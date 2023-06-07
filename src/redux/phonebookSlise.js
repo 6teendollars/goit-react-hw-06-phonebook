@@ -14,13 +14,6 @@ const phonebookSlice = createSlice({
     },
 
     removeContact(state, action) {
-      // return {
-      //   ...state,
-      //   contacts: state.contacts.filter(
-      //     contact => contact.id !== action.payload.id
-      //   ),
-      // };
-
       const index = state.contacts.findIndex(
         item => item.id === action.payload.id
       );
@@ -48,4 +41,3 @@ export const phonebookReduser = persistReducer(
   phonebookSlice.reducer
 );
 
-// export const phonebookReduser = phonebookSlice.reducer;
